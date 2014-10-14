@@ -1,8 +1,19 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	// $('.link').hover(
+	// 	function() {
+	// 	$(this).next('.submenu').addClass('is-active');
+	// 	}, function() {
+	// 	$(this).next('.submenu').removeClass('is-active');
+	// 	}
+	// );
 
-	console.log($('body').html());
+	//masonry
+	var $container = $('.main__row');
+	// initialize
+	$container.masonry({
+	  columnWidth: 415,
+	  itemSelector: '.main__bl'
+	});
+
 });
