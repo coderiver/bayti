@@ -7,17 +7,23 @@
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<!--[if IE 8]><script src="js/lib/css-mediaqueries.js"></script><![endif]-->
+
 </head>
 <body>
 <!-- BEGIN  out-->
 <div class="out">
 	<!-- begin header  -->
 	<header class="header">
+		<div class="header_mobile">
+			<a class="logo logo_small onleft" href="index.html"><img src="img/logo.png" alt="Bayti"></a>
+			<div class="search onright"><i class="ico ico_search"></i><i class="ico ico_menu"></i></div>
+		</div>
 		<div class="menu">
 			<ul>
 				<li><a class="link leftside first" href="#">About</a></li>
 				<li>
-					<a class="link leftside" href="#">The Menus</a>
+					<a class="link menus leftside" href="#">The Menus</a>
 					<ul class="submenu">
 						<li><a href="#">A la carte menu</a></li>
 						<li><a href="#">Lunch menu</a></li>
@@ -36,32 +42,151 @@
 		</div>
 		<div class="order">
 			<button type="button" class="btn">Order online</button>
-			<div class="search"><i class="onright"></i></div>
+			<div class="search"><i class="ico ico_search onright"></i></div>
 		</div>
 	</header>
 	<!-- end header -->
 	<!-- begin main  -->
 	<div class="main">
-		<div class="main__row js-masonry"  data-masonry-options='{ "isFitWidth": true }'>
-			<div class="main__bl tile1 w1 h2">
-			<!-- 	<img src="img/bl1.jpg" alt="Beverage"> -->
+		<div class="main__row" >
+			<div class="main__bl main_bl-h2">
+				<div class="cycle-slideshow"
+					data-cycle-pause-on-hover="true"
+					data-cycle-timeout="0"
+				>
+				    <img src="img/bl1.jpg" alt="">
+				    <img src="http://malsup.github.io/images/p3.jpg">
+				    <img src="http://malsup.github.io/images/p2.jpg">
+				    <img src="http://malsup.github.io/images/p1.jpg">
+				</div>
 			</div>
-			<div class="main__bl tile2 w2 h1">
-			<!-- 	<img src="img/bl2.jpg" alt="Nom"> -->
+			<div class="main__bl main_bl-w2">
+				<div class="cycle-slideshow"
+					data-cycle-pause-on-hover="true"
+					data-cycle-timeout="0"
+					>
+				    <img src="img/bl2.jpg" alt="">
+				    <img src="http://malsup.github.io/images/p2.jpg">
+				    <img src="http://malsup.github.io/images/p3.jpg">
+				    <img src="http://malsup.github.io/images/p4.jpg">
+				</div>
 			</div>
-			<div class="main__bl tile3 w1 h1">
-				<!-- <img src="img/bl3.jpg" alt="Nom"> -->
+			<div class="main__bl">
+				<div class="cycle-slideshow"
+					data-cycle-pause-on-hover="true"
+					data-cycle-timeout="0"
+					>
+				    <img src="img/bl3.jpg" alt="">
+				    <img src="http://malsup.github.io/images/p4.jpg">
+				    <img src="http://malsup.github.io/images/p1.jpg">
+				    <img src="http://malsup.github.io/images/p2.jpg">
+				</div>
 			</div>
-			<a href="#" class="main__bl tile4 w1 h1">
-				<div class="reserve"><p>Make a Reservation</p><i class="reserve__i"></i></div>
+			<a href="#" class="main__bl tile4">
+				<div class="reserve"><p>Make a Reservation</p><i class="ico ico_reserve"></i></div>
 			</a>
-			<div class="main__bl tile5 w1 h1"></div>
-			<a href="#" class="main__bl tile6 w1 h1">
-				<div class="view"><p class="small">View our <span>Menu</span></p><i class="view__i"></i></div>
+			<div class="main__bl">
+				<div class="cycle-slideshow"
+					data-cycle-pause-on-hover="true"
+					data-cycle-timeout="0"
+					>
+					<img src="img/bl5.jpg" alt="">
+					<img src="http://malsup.github.io/images/p2.jpg">
+					<img src="http://malsup.github.io/images/p1.jpg">
+					<img src="http://malsup.github.io/images/p3.jpg">
+				</div>
+			</div>
+			<a href="#" class="main__bl tile6">
+				<div class="view"><p class="small">View our <span>Menu</span></p><i class="ico ico_view"></i></div>
 			</a>
+			<div class="main__bl main_bl-w2">
+				<div class="cycle-slideshow"
+					data-cycle-pause-on-hover="true"
+					data-cycle-timeout="0"
+					>
+					<img src="img/bl6.jpg" alt="">
+					<img src="http://malsup.github.io/images/p1.jpg">
+					<img src="http://malsup.github.io/images/p2.jpg">
+					<img src="http://malsup.github.io/images/p3.jpg">
+				</div>
+			</div>
+			<div class="main__bl tile8">
+				<a class="googlemap" href="https://www.google.ru/maps/place/Al+Safir/@26.2175641,50.6057794,18z/data=!4m2!3m1!1s0x0000000000000000:0xaeb2215080880fc2">
+					<img src="http://maps.googleapis.com/maps/api/staticmap?center=26.219182,50.606836&zoom=16&format=png&sensor=false&size=415x415&maptype=roadmap&language=uk" alt="google">
+				</a>
+				<div class="address">
+					<p class="address__title">Bayti</p>
+					<p>Al Safir Hotel, Juffair</p>
+					<p>Bldg. 670-A, Road 2411, Blk. 324</p>
+					<p class="hide">Manama, Juffair</p>
+					<p>Kingdom of Bahrain+973 17 001 317</p>
+					<a class="hide" href="mailto: marketing@bflc.com.bh">marketing@bflc.com.bh</a>
+					<p class="hide">11am - 11:30pm</p>
+				</div>
+			</div>
+			<div class="main__bl">
+				<div class="cycle-slideshow"
+					data-cycle-pause-on-hover="true"
+					data-cycle-timeout="0"
+					>
+					<img src="img/bl7.jpg" alt="">
+					<img src="http://malsup.github.io/images/p2.jpg">
+					<img src="http://malsup.github.io/images/p1.jpg">
+					<img src="http://malsup.github.io/images/p3.jpg">
+				</div>
+			</div>
+			<div class="main__bl">
+				<div class="cycle-slideshow"
+					data-cycle-pause-on-hover="true"
+					data-cycle-timeout="0"
+					>
+					<img src="img/bl8.jpg" alt="">
+					<img src="http://malsup.github.io/images/p2.jpg">
+					<img src="http://malsup.github.io/images/p1.jpg">
+					<img src="http://malsup.github.io/images/p3.jpg">
+				</div>
+			</div>
+			<div class="main__bl tile11">
+				<p class="title">About Us</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id venenatis orci. Fusce eu tellus in purus maximus viverra. Ut et ex lectus. Proin id </p>
+				<button class="btn withborder" type="btn">Read More</button>
+			</div>
+			<div class="main__bl main_bl-w2">
+				<div class="cycle-slideshow"
+					data-cycle-pause-on-hover="true"
+					data-cycle-timeout="0"
+					>
+					<img src="img/bl9.jpg" alt="">
+					<img src="http://malsup.github.io/images/p2.jpg">
+					<img src="http://malsup.github.io/images/p1.jpg">
+					<img src="http://malsup.github.io/images/p3.jpg">
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- end main -->
+	<!-- begin footer  -->
+	<div class="footer">
+		<div class="footer__in">
+			<div class="footer__nav onleft">
+				<a class="onleft carte" href="#"><button type="button" class="btn"><i class="ico ico_carte"></i><span>A la Carte Menu</span></button></a>
+				<a class="onleft lunch" href="#"><button type="button" class="btn"><i class="ico ico_lunch"></i><span>Lunch</span></button></a>
+				<a class="onleft delivery" href="#"><button type="button" class="btn"><i class="ico ico_delivery"></i><span>Delivery Menu</span></button></a>
+				<a class="onleft party" href="#"><button type="button" class="btn"><i class="ico ico_party"></i><span>Party Package</span></button></a>
+				<a class="onleft wine last" href="#"><button type="button" class="btn"><i class="ico ico_wine"></i><span>Wine Menu</span></button></a>
+			</div>
+			<div class="footer__social onright">
+				<span>Follow us on</span>
+				<a class="social__i " href="http://www.facebook.com"><i class="ico ico_fb"></i></a>
+				<a class="social__i" href="http://www.twitter.com"><i class="ico ico_tw"></i></a>
+				<a class="social__i" href="http://www.instagram.com"><i class="ico ico_insta"></i></a>
+				<a class="social__i" href="http://www.plus.google.com"><i class="ico ico_g"></i></a>
+				<a class="social__i last" href="http://www.tripadvisor.com"><i class="ico ico_trip"></i></a>
+			</div>
+		</div>
+		<p class="copyright">Copyright 2014. All rights reserved</p>
+	</div>
+	<!-- end footer -->
 </div>
 <!-- END out-->
 <!-- load scripts -->

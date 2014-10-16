@@ -1,0 +1,118 @@
+//resize
++r(1260)
+	.header
+		padding: 25px 10px 0
+	.menu
+		.leftside
+			padding: 20px
+		.logo
+			margin: 0 5.5px
+		.rightside
+			padding: 20px
+		.reserve
+			width: 80%
+			p
+				+fs(34)
+			.ico_reserve
+				top: -48px
+				right: 16px
+				+fs(60)
+		.view
+			width: 90%
+			.small
+				+fs(25)
+			span
+				+fs(34)
+			.ico_view
+				right: 16px
+				+fs(60)
+		&.tile8
+			.address
+				top: -3%
+				padding: 13px 25px 13px 14px
+				.address__title
+					+fs(15)
+				.hide
+					display: none
+		&.tile11
+			padding: 15px 20px 0 20px
+			.title
+				padding: 15px 0
+				+fs(18)
+			p
+				+fs(13)
+				line-height: 1.2
+			.btn
+				width: 50%
+				height: 35px
+				margin-top: 10px
+
++r(1066)
+	.order
+		display: none
+	.menu
+		.logo img
+			width: 100px
+
++r(900)
+	.header
+		background: #000
+		padding: 20px
+	.header_mobile
+		display: block
+	.menu
+		position: absolute
+		width: 100%
+		padding: 10px 0
+		text-align: right
+		left: 0
+		background: #000
+		z-index: 120
+		display: none
+		li
+			display: block
+		.rightside, .leftside
+			padding: 15px 20px
+			color: #FFF
+		.link
+			&:after
+				display: block
+				top: 50%
+				left: 0
+				margin-top: -6px
+		.logo
+			display: none
+		&.is-active
+			display: block
+	.submenu
+		&.is-active
+			position: static
+			padding: 0 11% 0 0
+			text-align: right
+			a
+				padding: 17px
+	.main__bl
+		&.main_bl-w2
+			width: 49.9% !important
+
+
++r(600)
+	.main__bl
+		&.main_bl-w2
+			width: 100% !important
+	.footer__nav, .footer__social
+		float: none
+	.footer__nav
+		a
+			float: none
+			margin: 0
+			button
+				display: block
+				margin: 0 auto
+	.footer__social
+		text-align: center
+		span
+			display: block
+			margin: 0 0 10px 0
+		a
+			margin-right: 25px
