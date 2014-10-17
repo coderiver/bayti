@@ -2,6 +2,11 @@
 +r(1260)
 	.header
 		padding: 25px 10px 0
+		&.header_inner
+			margin-bottom: 10px
+			.order
+				position: static
+				padding-top: 63px
 	.menu
 		.logo img
 			width: 100px
@@ -29,15 +34,19 @@
 			.ico_view
 				right: 16px
 				+fs(60)
-		.order
-			position: static
-			+clr
-			.btn
-				float: left
-				margin-bottom: 20px
-			.search
-				float: right
-				padding-top: 12px
+		.submenu
+			a
+				padding: 20px 10px
+	.order
+		position: static
+		margin-bottom: 10px
+		+clr
+		.btn
+			float: left
+			margin-bottom: 0
+		.search
+			float: right
+			padding-top: 12px
 	.main__bl
 		&.tile8
 			.address
@@ -93,6 +102,11 @@
 	.main__bl
 		&.main_bl-w2
 			width: 49.95% !important
+	.inner_bl.inner_bl-txt .inner__inside
+		.title
+			+fs(24)
+		.inner__p
+			max-width: 95%
 
 
 +r(615)

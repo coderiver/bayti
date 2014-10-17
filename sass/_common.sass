@@ -115,6 +115,7 @@ a
 		background: #FFF
 		+fs(12)
 
+//cycle
 .cycle-slideshow
 	height: 100%
 	overflow: hidden
@@ -173,3 +174,22 @@ a
 	&.ico_menu
 		&:before
 			content: '\e80d'
+
+//other
+=ttl
+	position: relative
+	padding: 11% 0
+	text-transform: uppercase
+	line-height: 1
+	+fs(36)
+	+pnl
+	&:before
+		content: ""
+		position: absolute
+		display: block
+		top: 0
+		left: 50%
+		margin-left: -32px
+		width: 62px
+		height: 1px
+		background: #FFF

@@ -4,6 +4,8 @@
 	padding: 25px 50px 0
 	+box
 	+clr
+	&.header_inner
+		margin-bottom: 52px
 
 .header_mobile
 	display: none
@@ -94,14 +96,11 @@
 .main
 	overflow: hidden
 .main__row
-	margin: 0 auto
 	+clr
 .main__bl
-	display: block
 	float: left
 	width: 25%
 	height: 415px
-	overflow: hidden
 	+gray
 	&:hover
 		+gray-zero
@@ -156,23 +155,14 @@
 			line-height: 26px
 			+fs(14)
 			+spl
+		a
+			color: #FFF
+			+fs(14)
+			+spl
+			&:hover
+				text-decoration: underline
 		.title
-			position: relative
-			padding: 11% 0
-			text-transform: uppercase
-			line-height: 1
-			+fs(36)
-			+pnl
-			&:before
-				content: ""
-				position: absolute
-				display: block
-				top: 0
-				left: 50%
-				margin-left: -32px
-				width: 62px
-				height: 1px
-				background: #FFF
+			+ttl
 		.btn
 			margin-top: 7%
 

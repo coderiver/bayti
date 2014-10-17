@@ -1,0 +1,74 @@
+//inner
+.inner_bl
+	+cover
+	+gpu
+	&.inner_bl-1
+		background-image: url(../img/in_bl1.jpg)
+	&.inner_bl-2
+		background-image: url(../img/in_bl2.jpg)
+	&.inner_bl-3
+		background-image: url(../img/in_bl3.jpg)
+	&.inner_bl-4
+		background-image: url(../img/in_bl4.jpg)
+	&.inner_bl-5
+		background-image: url(../img/in_bl5.jpg)
+	&.inner_bl-txt
+		background: #fff
+		+vertical
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			margin-top: -15px
+		&.leftarr
+			&:after
+				left: -20px
+				+arr(20, 30, #fff, l)
+		&.rightarr
+			&:after
+				right: -20px
+				+arr(20, 30, #fff, r)
+				z-index: 1
+		.inner__inside
+			display: inline-block
+			vertical-align: middle
+			p
+				position: relative
+				padding-bottom: 40px
+				color: #000
+				text-transform: uppercase
+				+fs(24)
+				+pnl
+				&:after
+					content: ""
+					position: absolute
+					display: block
+					bottom: 0
+					left: 50%
+					margin-left: -32px
+					width: 62px
+					height: 1px
+					background: #000
+			.title
+				+ttl
+				padding: 5% 0
+				&:before
+					background: #000
+				&:after
+					display: none
+			.inner__p
+				max-width: 75%
+				margin: 0 auto
+				padding-bottom: 0
+				line-height: 26px
+				text-transform: none
+				+fs(14)
+				+spl
+				&:after
+					display: none
+			.btn
+				margin-top: 35px
+				color: #000
+				border-color: #000
+				&.percentage
+					margin-top: 4.2%
