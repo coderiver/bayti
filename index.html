@@ -6,6 +6,7 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&language=uk"></script>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<!--[if IE 8]><script src="js/lib/css-mediaqueries.js"></script><![endif]-->
 
@@ -17,7 +18,11 @@
 	<header class="header">
 		<div class="header_mobile">
 			<a class="logo logo_small onleft" href="index.html"><img src="img/logo.png" alt="Bayti"></a>
-			<div class="search onright"><i class="ico ico_search"></i><i class="ico ico_menu"></i></div>
+			<div class="search onright">
+				<button type="button" class="btn btn_white">Order online</button>
+				<i class="ico ico_search"></i>
+				<i class="ico ico_menu"></i>
+			</div>
 		</div>
 		<div class="menu">
 			<ul>
@@ -52,7 +57,7 @@
 			<div class="main__bl main_bl-h2">
 				<div class="cycle-slideshow"
 					data-cycle-pause-on-hover="true"
-					data-cycle-timeout="0"
+					data-cycle-timeout="1500"
 				>
 				    <img src="img/bl1.jpg" alt="">
 				    <img src="http://malsup.github.io/images/p3.jpg">
@@ -63,7 +68,7 @@
 			<div class="main__bl main_bl-w2">
 				<div class="cycle-slideshow"
 					data-cycle-pause-on-hover="true"
-					data-cycle-timeout="0"
+					data-cycle-timeout="2000"
 					>
 				    <img src="img/bl2.jpg" alt="">
 				    <img src="http://malsup.github.io/images/p2.jpg">
@@ -74,7 +79,7 @@
 			<div class="main__bl">
 				<div class="cycle-slideshow"
 					data-cycle-pause-on-hover="true"
-					data-cycle-timeout="0"
+					data-cycle-timeout="2500"
 					>
 				    <img src="img/bl3.jpg" alt="">
 				    <img src="http://malsup.github.io/images/p4.jpg">
@@ -88,7 +93,7 @@
 			<div class="main__bl">
 				<div class="cycle-slideshow"
 					data-cycle-pause-on-hover="true"
-					data-cycle-timeout="0"
+					data-cycle-timeout="3000"
 					>
 					<img src="img/bl5.jpg" alt="">
 					<img src="http://malsup.github.io/images/p2.jpg">
@@ -102,7 +107,7 @@
 			<div class="main__bl main_bl-w2">
 				<div class="cycle-slideshow"
 					data-cycle-pause-on-hover="true"
-					data-cycle-timeout="0"
+					data-cycle-timeout="3500"
 					>
 					<img src="img/bl6.jpg" alt="">
 					<img src="http://malsup.github.io/images/p1.jpg">
@@ -111,10 +116,8 @@
 				</div>
 			</div>
 			<div class="main__bl tile8">
-				<a class="googlemap" href="https://www.google.ru/maps/place/Al+Safir/@26.2175641,50.6057794,18z/data=!4m2!3m1!1s0x0000000000000000:0xaeb2215080880fc2">
-					<img src="http://maps.googleapis.com/maps/api/staticmap?center=26.219182,50.606836&zoom=16&format=png&sensor=false&size=415x415&maptype=roadmap&language=uk" alt="google">
-				</a>
-				<div class="address">
+				<div id="googlemap"></div>
+				<div id="address">
 					<p class="address__title">Bayti</p>
 					<p>Al Safir Hotel, Juffair</p>
 					<p>Bldg. 670-A, Road 2411, Blk. 324</p>

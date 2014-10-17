@@ -46,6 +46,7 @@ a { text-decoration: none; }
 .btn:active { position: relative; top: 1px; }
 .btn.withborder { width: 208px; background: none; border: 1px solid white; }
 .btn.nav { width: 175px; }
+.btn.btn_white { width: 120px; height: 35px; color: black; background: white; font-size: 12px; font-size: 1.2rem; }
 
 .cycle-slideshow { height: 100%; overflow: hidden; }
 .cycle-slideshow img { width: 100%; height: 100%; }
@@ -79,7 +80,8 @@ a { text-decoration: none; }
 .header_mobile .logo_small { -webkit-transition: 0.2s ease; -moz-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease; }
 .header_mobile .logo_small img { width: 100px; }
 .header_mobile .logo_small:hover { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
-.header_mobile .search .ico { padding: 15px 0 0 15px; color: white; cursor: pointer; font-size: 30px; font-size: 3rem; -webkit-transition: 0.2s ease; -moz-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease; }
+.header_mobile .search { padding-top: 15px; }
+.header_mobile .search .ico { padding-left: 15px; color: white; vertical-align: middle; cursor: pointer; font-size: 30px; font-size: 3rem; -webkit-transition: 0.2s ease; -moz-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease; }
 .header_mobile .search .ico:hover { -webkit-transform: translateY(-2px); -moz-transform: translateY(-2px); -ms-transform: translateY(-2px); -o-transform: translateY(-2px); transform: translateY(-2px); }
 
 .menu { text-align: center; }
@@ -107,7 +109,7 @@ a { text-decoration: none; }
 .main__row:after { content: " "; display: table; clear: both; }
 
 .main__bl { display: block; float: left; width: 25%; height: 415px; overflow: hidden; filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
-.main__bl:hover { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale"); -webkit-filter: grayscale(0%); }
+.main__bl:hover { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale"); -webkit-filter: grayscale(0%); -webkit-transition: filter 0.3s ease, -webkit-filter 0.3s ease; -moz-transition: filter 0.3s ease, -webkit-filter 0.3s ease; -o-transition: filter 0.3s ease, -webkit-filter 0.3s ease; transition: filter 0.3s ease, -webkit-filter 0.3s ease; }
 .main__bl.main_bl-w2 { width: 50%; }
 .main__bl.main_bl-h2 { height: 830px; }
 .main__bl.tile4 { background: url(../img/bl4.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; text-align: center; font-size: 0; }
@@ -119,18 +121,12 @@ a { text-decoration: none; }
 .main__bl .reserve .small, .main__bl .view .small { padding-left: 30px; font-size: 30px; font-size: 3rem; }
 .main__bl .reserve span, .main__bl .view span { font-size: 78px; font-size: 7.8rem; }
 .main__bl .reserve .ico, .main__bl .view .ico { position: absolute; top: -63px; right: 15px; font-size: 80px; font-size: 8rem; }
-.main__bl.tile8 { position: relative; }
-.main__bl.tile8 .googlemap { position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; }
-.main__bl.tile8 img { width: 100%; height: 100%; }
-.main__bl.tile8 .address { position: absolute; top: 28%; left: 24%; padding: 13px 25px; background: black; }
-.main__bl.tile8 .address p, .main__bl.tile8 .address a { color: white; font-size: 12px; font-size: 1.2rem; font-family: "SourceSansPro-Light", Arial, sans-serif; }
-.main__bl.tile8 .address:after { content: ""; position: absolute; left: 5px; bottom: -20px; background: url('../img/icons-s60a3031f38.png') 0 0 no-repeat; width: 35px; height: 21px; }
-.main__bl.tile8 .address .address__title { margin-bottom: 10px; font-size: 18px; font-size: 1.8rem; }
+.main__bl.tile8 #googlemap { width: 100%; height: 100%; }
 .main__bl.tile11 { padding: 4.5% 3% 0 3%; color: white; background-color: black; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .main__bl.tile11 p { line-height: 26px; font-size: 14px; font-size: 1.4rem; font-family: "SourceSansPro-Light", Arial, sans-serif; }
-.main__bl.tile11 .title { position: relative; padding: 40px 0; text-transform: uppercase; line-height: 1; font-size: 36px; font-size: 3.6rem; font-family: "ProximaNova-Light", Arial, sans-serif; }
+.main__bl.tile11 .title { position: relative; padding: 11% 0; text-transform: uppercase; line-height: 1; font-size: 36px; font-size: 3.6rem; font-family: "ProximaNova-Light", Arial, sans-serif; }
 .main__bl.tile11 .title:before { content: ""; position: absolute; display: block; top: 0; left: 50%; margin-left: -32px; width: 62px; height: 1px; background: white; }
-.main__bl.tile11 .btn { margin-top: 40px; }
+.main__bl.tile11 .btn { margin-top: 7%; }
 
 .footer { padding: 38px 50px 26px 50px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .footer .footer__in, .footer .footer__nav { *zoom: 1; }
@@ -152,6 +148,7 @@ a { text-decoration: none; }
 .footer .copyright { margin-top: 30px; text-align: center; color: #a1a1a1; font-family: "ProximaNova-Light", Arial, sans-serif; font-size: 11px; font-size: 1.1rem; }
 
 @media only screen and (max-width: 1260px) { .header { padding: 25px 10px 0; }
+  .menu .logo img { width: 100px; }
   .menu .leftside { padding: 20px; }
   .menu .logo { margin: 0 5.5px; }
   .menu .rightside { padding: 20px; }
@@ -162,16 +159,16 @@ a { text-decoration: none; }
   .menu .view .small { font-size: 25px; font-size: 2.5rem; }
   .menu .view span { font-size: 34px; font-size: 3.4rem; }
   .menu .view .ico_view { right: 16px; font-size: 60px; font-size: 6rem; }
-  .menu.tile8 .address { top: -3%; padding: 13px 25px 13px 14px; }
-  .menu.tile8 .address .address__title { font-size: 15px; font-size: 1.5rem; }
-  .menu.tile8 .address .hide { display: none; }
-  .menu.tile11 { padding: 15px 20px 0 20px; }
-  .menu.tile11 .title { padding: 15px 0; font-size: 18px; font-size: 1.8rem; }
-  .menu.tile11 p { font-size: 13px; font-size: 1.3rem; line-height: 1.2; }
-  .menu.tile11 .btn { width: 50%; height: 35px; margin-top: 10px; } }
-@media only screen and (max-width: 1066px) { .order { display: none; }
-  .menu .logo img { width: 100px; } }
+  .menu .order { position: static; *zoom: 1; }
+  .menu .order:after { content: " "; display: table; clear: both; }
+  .menu .order .btn { float: left; margin-bottom: 20px; }
+  .menu .order .search { float: right; padding-top: 12px; }
+  .main__bl.tile8 .address { top: -3%; padding: 13px 25px 13px 14px; }
+  .main__bl.tile8 .address .address__title { font-size: 15px; font-size: 1.5rem; }
+  .main__bl.tile8 .address .hide { display: none; }
+  .main__bl.tile11 .title { font-size: 25px; font-size: 2.5rem; } }
 @media only screen and (max-width: 900px) { .header { background: black; padding: 20px; }
+  .order { display: none; }
   .header_mobile { display: block; }
   .menu { position: absolute; width: 100%; padding: 10px 0; text-align: right; left: 0; background: black; z-index: 120; display: none; }
   .menu li { display: block; }
@@ -181,8 +178,8 @@ a { text-decoration: none; }
   .menu.is-active { display: block; }
   .submenu.is-active { position: static; padding: 0 11% 0 0; text-align: right; }
   .submenu.is-active a { padding: 17px; }
-  .main__bl.main_bl-w2 { width: 49.9% !important; } }
-@media only screen and (max-width: 600px) { .main__bl.main_bl-w2 { width: 100% !important; }
+  .main__bl.main_bl-w2 { width: 49.95% !important; } }
+@media only screen and (max-width: 615px) { .main__bl.main_bl-w2 { width: 100% !important; }
   .footer__nav, .footer__social { float: none; }
   .footer__nav a { float: none; margin: 0; }
   .footer__nav a button { display: block; margin: 0 auto; }
