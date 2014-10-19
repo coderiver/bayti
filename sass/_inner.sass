@@ -1,5 +1,6 @@
 //inner
 .inner_bl
+	z-index: 2
 	+cover
 	+gpu
 	&.inner_bl-1
@@ -14,21 +15,8 @@
 		background-image: url(../img/in_bl5.jpg)
 	&.inner_bl-txt
 		background: #fff
+		z-index: 3
 		+vertical
-		&:after
-			content: ""
-			position: absolute
-			top: 50%
-			margin-top: -15px
-		&.leftarr
-			&:after
-				left: -20px
-				+arr(20, 30, #fff, l)
-		&.rightarr
-			&:after
-				right: -20px
-				+arr(20, 30, #fff, r)
-				z-index: 1
 		.inner__inside
 			display: inline-block
 			vertical-align: middle
@@ -72,3 +60,16 @@
 				border-color: #000
 				&.percentage
 					margin-top: 4.2%
+	.leftarr
+		display: block
+		position: absolute
+		top: 50%
+		left: -20px
+		margin-top: -15px
+		+arr(20, 30, #fff, l)
+	.rightarr
+		display: block
+		position: absolute
+		top: 50%
+		right: -20px
+		+arr(20, 30, #fff, r)

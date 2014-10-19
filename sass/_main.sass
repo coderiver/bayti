@@ -5,7 +5,7 @@
 	+box
 	+clr
 	&.header_inner
-		margin-bottom: 52px
+		margin-bottom: 67px
 
 .header_mobile
 	display: none
@@ -19,7 +19,7 @@
 	.search
 		padding-top: 15px
 		.ico
-			padding-left: 15px
+			margin-left: 15px
 			color: #FFF
 			vertical-align: middle
 			cursor: pointer
@@ -62,17 +62,17 @@
 	.submenu
 		visibility: hidden
 		position: absolute
-		padding-left: 23.5%
 		left: 0
 		width: 100%
-		text-align: left
+		text-align: center
 		background-color: #000
+		letter-spacing: 1px
 		z-index: 2
 		+opacity(0)
 		+box
 		a
 			color: #FFF
-			padding: 20px
+			padding: 28px 25px
 			+fs(12)
 			+pnr
 		&.is-active
@@ -173,10 +173,21 @@
 	.footer__in, .footer__nav
 		+clr
 	a
-		display: block
 		margin-right: 30px
 		&.last
 			margin-right: 0
+	.btn
+		width: 175px
+		text-align: center
+		text-transform: none
+		line-height: 47px
+		margin-bottom: 20px
+		+fs(21)
+		+air
+		span
+			display: inline-block
+			padding-top: 3px
+			vertical-align: top
 		&.carte
 			.ico_carte
 				+fs(32)
@@ -196,18 +207,6 @@
 			.ico_wine
 				margin-right: 5px
 				+fs(38)
-	.btn
-		width: 175px
-		text-transform: none
-		line-height: 47px
-		margin-bottom: 20px
-		+fs(21)
-		+air
-		.ico
-			vertical-align: top
-		span
-			display: inline-block
-			padding-top: 4px
 	.footer__social
 		padding-top: 13px
 		span

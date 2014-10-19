@@ -37,6 +37,7 @@
 		.submenu
 			a
 				padding: 20px 10px
+				letter-spacing: 0.5px
 	.order
 		position: static
 		margin-bottom: 10px
@@ -64,6 +65,8 @@
 	.header
 		background: #000
 		padding: 20px
+		&.header_inner
+			margin-bottom: 0
 	.order
 		display: none
 	.header_mobile
@@ -113,19 +116,20 @@
 	.main__bl
 		&.main_bl-w2
 			width: 100% !important
-	.footer__nav, .footer__social
-		float: none
-	.footer__nav
-		a
+	.footer
+		.footer__nav, .footer__social
 			float: none
-			margin: 0
-			button
+		.footer__nav
+			a
 				display: block
-				margin: 0 auto
-	.footer__social
-		text-align: center
-		span
-			display: block
-			margin: 0 0 10px 0
-		a
-			margin-right: 25px
+				float: none
+				margin: 0 auto 20px
+		.footer__social
+			text-align: center
+			span
+				display: block
+				margin: 0 0 10px 0
+			a
+				margin-right: 25px
+				&.last
+					margin-right: 0
