@@ -3,7 +3,8 @@
 		  var mapOptions = {
 		    zoom: 16,
 		    center: new google.maps.LatLng(26.21924, 50.60631),
-		    disableDefaultUI: true
+		    disableDefaultUI: true,
+		    scrollwheel: false
 		  };
 		  map = new google.maps.Map(document.getElementById('googlemap'),
 		      mapOptions);

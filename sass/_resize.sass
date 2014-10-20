@@ -33,20 +33,21 @@
 		.search
 			float: right
 			padding-top: 12px
-	.main__bl
-		// &.tile8
-		// 	.address
-		// 		top: -3%
-		// 		padding: 13px 25px 13px 14px
-		// 		.address__title
-		// 			+fs(15)
-		// 		.hide
-		// 			display: none
-		&.tile11
-			.title
-				+fs(25)
+	.main__bl.tile11
+		.title
+			+fs(26)
+		p
+			line-height: 1.2
+	.inner_bl.inner_bl-txt .inner__inside
+		.title
+			+fs(26)
+		.inner__p
+			max-width: 90%
+			line-height: 1.2
+		p
+			+fs(18)
 
-+r(900)
++r(918)
 	.header
 		background: #000
 		padding: 20px
@@ -87,20 +88,32 @@
 			text-align: right
 			a
 				padding: 17px
-	.main__bl
-		&.main_bl-w2
-			width: 49.99% !important
-	.inner_bl.inner_bl-txt .inner__inside
-		.title
-			+fs(24)
-		.inner__p
-			max-width: 95%
 
-
-+r(615)
++r(708)
 	.main__bl
 		&.main_bl-w2
 			width: 100% !important
+
++r(618)
+	.inner_bl
+		.leftarr
+			top: -20px
+			left: 50%
+			margin-left: -10px
+			margin-top: 0
+			+arr(40, 25, #fff, t)
+		.rightarr
+			top: 98%
+			left: 50%
+			margin-left: -10px
+			margin-top: 0
+			+arr(40, 25, #fff, b)
+	.inner_bl.inner_bl-txt .inner__inside
+		.inner__p
+			max-width: 85%
+			line-height: 1.2
+		p
+			+fs(24)
 	.footer
 		.footer__nav, .footer__social
 			float: none
