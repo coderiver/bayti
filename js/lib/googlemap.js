@@ -8,7 +8,7 @@
 		  map = new google.maps.Map(document.getElementById('googlemap'),
 		      mapOptions);
 
-		var image = 'img/icons/arr.png';
+		var image = 'img/arr.png';
 		var myLatLng = new google.maps.LatLng(26.2172000, 50.6051021);
 		var arr = new google.maps.Marker({
 		      position: myLatLng,
@@ -16,18 +16,19 @@
 		      icon: image
 		  });
 
-		var infowindow = new google.maps.InfoWindow({
-	         content: document.getElementById("address"),
-	         disableAutoPan: false,
-	         pixelOffset: new google.maps.Size(0, 0),
-	         zIndex: null,
-	         boxStyle: {
-	            opacity: 0.75,
-	            width: "240px"
-	        },
-	        closeBoxMargin: "0",
-	        infoBoxClearance: new google.maps.Size(1, 1)
-	    });
+	  	var myOptions = {
+			content: document.getElementById("address"),
+			disableAutoPan: true,
+			pixelOffset: new google.maps.Size(-50, -180),
+			position: new google.maps.LatLng(26.2172000, 50.6051021),
+			closeBoxURL: "",
+			isHidden: false,
+			pane: "mapPane",
+			enableEventPropagation: true
+		};
+
+		var ibLabel = new InfoBox(myOptions);
+		ibLabel.open(map);
 
 		google.maps.event.addDomListener(map, 'click', fullSize);
 		google.maps.event.addListener(arr, 'click', function() {
